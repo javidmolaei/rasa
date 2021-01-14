@@ -1,0 +1,53 @@
+package app.model;
+
+public class KnapsackItem {
+
+    private int weight;
+    private int value;
+    private double valueByWeight;
+    private String name;
+
+    /**
+     * Constructor that instantiates weight, name for an item.
+     * @param weight
+     * @param name
+     */
+    public KnapsackItem(int weight, String name) {
+        this.weight = weight;
+        this.value = weight;
+        valueByWeight = (double) value / (double) weight;
+        this.name = name;
+    }
+
+    /**
+     * Method that gets the value / weight value from an item.
+     * @return
+     */
+    public double getValueByWeight() {
+        return valueByWeight;
+    }
+
+    /**
+     * Method that returns the weight an item has.
+     * @return
+     */
+    public int getWeight() {
+        return weight;
+    }
+
+    /**
+     * Method that gets the value an item has.
+     * @return
+     */
+    public int getValue() {
+        return value;
+    }
+
+    /**
+     * Method that sets the name of an item.
+     * @return
+     */
+    public String getName() {
+        return name;
+    }
+}
