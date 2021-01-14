@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 
 public class Main extends JFrame {
+
     private final Toaster toaster;
     public static JTextArea console;
     TextField nField = new TextField("OBJECT");
